@@ -1,5 +1,6 @@
 import React from 'react';
 import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
+import './SiteBar.css';
 
 const SideBar = () => {
     return (
@@ -73,9 +74,14 @@ const SideBar = () => {
                     </div>
                 </div>
                 <div className="_topnav p-3 border">
-                    <p className="text-center font-semibold border-b-2 border-indigo-500">
+                    <p className="text-center font-semibold border-b-2 border-indigo-500 p-2">
                         Collor Options
                     </p>
+                    {/* color palate */}
+                    <div className='flex justify-center'>
+                        <div className="_color -light bg-white border border-indigo-500 w-[10]"></div>
+                        <div className="_color -dark bg-slate-800"></div>
+                    </div>
                 </div>
             </div>
             <div>center</div>

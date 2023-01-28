@@ -1,0 +1,16 @@
+.nortification_counter{
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: blueviolet;
+    padding: 5px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.user_icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

@@ -1,15 +1,20 @@
 import React from 'react';
+import NavBar from '../../components/navBar/NavBar';
 import SideBar from '../../components/sideBar/SideBar';
+import Widget from '../../components/widget/Widget';
 
 const Home = () => {
     return (
         <div>
             <div className='grid grid-cols-12 gap-4'>
-                <div className="_sidebar col-span-2 p-3">
+                {/* sid bar sec */}
+                <div className="_sidebar col-span-2 p-4">
                     <SideBar />
                 </div>
+                {/* nav bar sec */}
                 <div className="_mcompontnts col-span-10 p-3">
-                    <p>main compontnts</p>
+                    <NavBar />
+                    <Widget />
                 </div>
             </div>
         </div>
