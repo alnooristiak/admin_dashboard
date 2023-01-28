@@ -3,6 +3,7 @@ import Chart from '../../components/chart/Chart';
 import Fetured from '../../components/fetured/Fetured';
 import NavBar from '../../components/navBar/NavBar';
 import SideBar from '../../components/sideBar/SideBar';
+import Tables from '../../components/table/Table';
 import Widget from '../../components/widget/Widget';
 
 const Home = () => {
@@ -27,12 +28,16 @@ const Home = () => {
                     </div>
                     {/* fetured sec */}
                     <div className='grid grid-cols-12 gap-4'>
-                        <div className="col-span-6">
+                        <div className="col-span-4">
                             <Fetured />
                         </div>
-                        <div className="col-span-6">
-                            <Chart className="col-span-6" />
+                        <div className="col-span-8 p-3">
+                            <Chart />
                         </div>
+                    </div>
+                    {/* table sec */}
+                    <div className='my-5'>
+                        <Tables />
                     </div>
                 </div>
             </div>
