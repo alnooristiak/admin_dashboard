@@ -1,12 +1,15 @@
 import React from 'react';
 import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
 import './SiteBar.css';
+import { Link } from 'react-router-dom';
 
 const SideBar = () => {
     return (
         <div>
             <div className='_logo drop-shadow-xl bg-slate-500 p-2'>
-                <h3 className='font-bold text-center'>logo</h3>
+                <Link to="/">
+                    <h3 className='font-bold text-center'>logo</h3>
+                </Link>
             </div>
             <div>
                 {/* main sec */}
@@ -21,8 +24,16 @@ const SideBar = () => {
                 <div className="_lists">
                     <p className='font-semibold border-b-2 border-indigo-500'>lists</p>
                     <div className="_topnav p-2">
+                        <Link to="/users">
                         <DashboardCustomizeIcon />
                         <span className="pl-2 font-semibold">User</span>
+                        </Link>
+                    </div>
+                    <div className="_topnav p-2">
+                        <Link to="/products">
+                        <DashboardCustomizeIcon />
+                        <span className="pl-2 font-semibold">Products</span>
+                        </Link>
                     </div>
                     <div className="_topnav p-2">
                         <DashboardCustomizeIcon />
